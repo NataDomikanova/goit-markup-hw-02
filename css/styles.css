@@ -10,28 +10,46 @@
   
 }
 
-body{
-    background-color: var(--mane-color);
-    color: var(--text-color);
-}
-
-ul{
+.list{
     list-style: none;
 }
 
-/* Шапка сайту */
-
-.logo-text{
-    color: var(--chenj-color);
+img{
+    display: block;
 }
 
-.logo-t{
+.link{
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--mane-color);
+    color: var(--text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+/* Шапка сайту */
+.logo{
+    color: var(--chenj-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo .title{
     color: #000000;
+}
+
+.logo .title-f{
+    color: var(--mane-color);
 }
 
 .navigation-website a{
     color: var(--title-color);
-}
+} 
+
 .contact a{
     color: var(--text-color);
 }
@@ -43,6 +61,14 @@ ul{
     color: var(--chenj-color);
 }
 
+.navigation-website a,
+.contact{
+font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em
+}
+
 .navigation-website .current{
     color: var(--chenj-color);
 }
@@ -51,23 +77,73 @@ ul{
 
 .hero{
     background-color: var(--footer-bg-color);
-    color: var(--mane-color);
+    
 }
+
+.hero-title{
+    color: var(--mane-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
 .button{
     color: var(--mane-color);
     background-color: var(--chenj-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 
 /* Секції */
-
-.section-title{
-    color: var(--title-color);
-}
-
 /* Наші переваги */
+
+.hidden-title{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 
 .benefits .title{
     color: var(--title-color);
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.benefits .text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71px;
+}
+
+/* Чим ми займаємся  */
+
+.section-title{
+    color: var(--title-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 
 /* Наша команда */
@@ -77,37 +153,73 @@ ul{
 }
 .team .name{
     color: var(--title-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
+
+.team .text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
 .member{
     background-color: var(--mane-color);
 }
-
 
 /* Контакти */
 
 .auth{
     color: rgba(255,255,255,60%);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
 }
+
 .addres-site{
     background-color: var(--footer-bg-color);
 }
 
-/* Навігація портфоліо  */
+/* Опції портфоліо  */
 
-.nav.button{
+.option.button{
     color: var(--title-color);
     background-color: var(--section-bg-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
 }
-.nav.button:hover,
-.nav.button:focus{
+
+.option.button:hover,
+.option.button:focus{
     color: var(--mane-color);
     background-color: var(--chenj-color);
 }
 
 /* Проекти портфоліо */
-.project-title{
+.card .title{
     color: var(--title-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
+.card .text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+}
+
 .card{
     background-color: var(--card-bg-color);
 }
